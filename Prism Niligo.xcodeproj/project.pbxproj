@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48668AA51F1E0F15008A3737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48668AA41F1E0F15008A3737 /* AppDelegate.swift */; };
+		48668AA71F1E0F15008A3737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48668AA61F1E0F15008A3737 /* ViewController.swift */; };
+		48668AAA1F1E0F15008A3737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48668AA81F1E0F15008A3737 /* Main.storyboard */; };
+		48668AAC1F1E0F15008A3737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48668AAB1F1E0F15008A3737 /* Assets.xcassets */; };
+		48668AAF1F1E0F15008A3737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48668AAD1F1E0F15008A3737 /* LaunchScreen.storyboard */; };
+		48668ABA1F1E0F15008A3737 /* Prism_NiligoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48668AB91F1E0F15008A3737 /* Prism_NiligoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48668AB61F1E0F15008A3737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48668A991F1E0F15008A3737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48668AA01F1E0F15008A3737;
+			remoteInfo = "Prism Niligo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48668AA11F1E0F15008A3737 /* Prism Niligo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prism Niligo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48668AA41F1E0F15008A3737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48668AA61F1E0F15008A3737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48668AA91F1E0F15008A3737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48668AAB1F1E0F15008A3737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48668AAE1F1E0F15008A3737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48668AB01F1E0F15008A3737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48668AB51F1E0F15008A3737 /* Prism NiligoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prism NiligoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48668AB91F1E0F15008A3737 /* Prism_NiligoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prism_NiligoTests.swift; sourceTree = "<group>"; };
+		48668ABB1F1E0F15008A3737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48668A9E1F1E0F15008A3737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48668AB21F1E0F15008A3737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48668A981F1E0F15008A3737 = {
+			isa = PBXGroup;
+			children = (
+				48668AA31F1E0F15008A3737 /* Prism Niligo */,
+				48668AB81F1E0F15008A3737 /* Prism NiligoTests */,
+				48668AA21F1E0F15008A3737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48668AA21F1E0F15008A3737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48668AA11F1E0F15008A3737 /* Prism Niligo.app */,
+				48668AB51F1E0F15008A3737 /* Prism NiligoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48668AA31F1E0F15008A3737 /* Prism Niligo */ = {
+			isa = PBXGroup;
+			children = (
+				48668AA41F1E0F15008A3737 /* AppDelegate.swift */,
+				48668AA61F1E0F15008A3737 /* ViewController.swift */,
+				48668AA81F1E0F15008A3737 /* Main.storyboard */,
+				48668AAB1F1E0F15008A3737 /* Assets.xcassets */,
+				48668AAD1F1E0F15008A3737 /* LaunchScreen.storyboard */,
+				48668AB01F1E0F15008A3737 /* Info.plist */,
+			);
+			path = "Prism Niligo";
+			sourceTree = "<group>";
+		};
+		48668AB81F1E0F15008A3737 /* Prism NiligoTests */ = {
+			isa = PBXGroup;
+			children = (
+				48668AB91F1E0F15008A3737 /* Prism_NiligoTests.swift */,
+				48668ABB1F1E0F15008A3737 /* Info.plist */,
+			);
+			path = "Prism NiligoTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48668AA01F1E0F15008A3737 /* Prism Niligo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48668ABE1F1E0F15008A3737 /* Build configuration list for PBXNativeTarget "Prism Niligo" */;
+			buildPhases = (
+				48668A9D1F1E0F15008A3737 /* Sources */,
+				48668A9E1F1E0F15008A3737 /* Frameworks */,
+				48668A9F1F1E0F15008A3737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prism Niligo";
+			productName = "Prism Niligo";
+			productReference = 48668AA11F1E0F15008A3737 /* Prism Niligo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48668AB41F1E0F15008A3737 /* Prism NiligoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48668AC11F1E0F15008A3737 /* Build configuration list for PBXNativeTarget "Prism NiligoTests" */;
+			buildPhases = (
+				48668AB11F1E0F15008A3737 /* Sources */,
+				48668AB21F1E0F15008A3737 /* Frameworks */,
+				48668AB31F1E0F15008A3737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48668AB71F1E0F15008A3737 /* PBXTargetDependency */,
+			);
+			name = "Prism NiligoTests";
+			productName = "Prism NiligoTests";
+			productReference = 48668AB51F1E0F15008A3737 /* Prism NiligoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48668A991F1E0F15008A3737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = amirhosein;
+				TargetAttributes = {
+					48668AA01F1E0F15008A3737 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					48668AB41F1E0F15008A3737 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 48668AA01F1E0F15008A3737;
+					};
+				};
+			};
+			buildConfigurationList = 48668A9C1F1E0F15008A3737 /* Build configuration list for PBXProject "Prism Niligo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48668A981F1E0F15008A3737;
+			productRefGroup = 48668AA21F1E0F15008A3737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48668AA01F1E0F15008A3737 /* Prism Niligo */,
+				48668AB41F1E0F15008A3737 /* Prism NiligoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48668A9F1F1E0F15008A3737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48668AAF1F1E0F15008A3737 /* LaunchScreen.storyboard in Resources */,
+				48668AAC1F1E0F15008A3737 /* Assets.xcassets in Resources */,
+				48668AAA1F1E0F15008A3737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48668AB31F1E0F15008A3737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48668A9D1F1E0F15008A3737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48668AA71F1E0F15008A3737 /* ViewController.swift in Sources */,
+				48668AA51F1E0F15008A3737 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48668AB11F1E0F15008A3737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48668ABA1F1E0F15008A3737 /* Prism_NiligoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48668AB71F1E0F15008A3737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48668AA01F1E0F15008A3737 /* Prism Niligo */;
+			targetProxy = 48668AB61F1E0F15008A3737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48668AA81F1E0F15008A3737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48668AA91F1E0F15008A3737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48668AAD1F1E0F15008A3737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48668AAE1F1E0F15008A3737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48668ABC1F1E0F15008A3737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48668ABD1F1E0F15008A3737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48668ABF1F1E0F15008A3737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Prism Niligo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-Niligo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		48668AC01F1E0F15008A3737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Prism Niligo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-Niligo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		48668AC21F1E0F15008A3737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Prism NiligoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-NiligoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prism Niligo.app/Prism Niligo";
+			};
+			name = Debug;
+		};
+		48668AC31F1E0F15008A3737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Prism NiligoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-NiligoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prism Niligo.app/Prism Niligo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48668A9C1F1E0F15008A3737 /* Build configuration list for PBXProject "Prism Niligo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48668ABC1F1E0F15008A3737 /* Debug */,
+				48668ABD1F1E0F15008A3737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48668ABE1F1E0F15008A3737 /* Build configuration list for PBXNativeTarget "Prism Niligo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48668ABF1F1E0F15008A3737 /* Debug */,
+				48668AC01F1E0F15008A3737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48668AC11F1E0F15008A3737 /* Build configuration list for PBXNativeTarget "Prism NiligoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48668AC21F1E0F15008A3737 /* Debug */,
+				48668AC31F1E0F15008A3737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48668A991F1E0F15008A3737 /* Project object */;
+}
