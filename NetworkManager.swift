@@ -46,14 +46,18 @@ class NetworkManager  {
             if let json = try JSONSerialization.jsonObject(with: data , options: .mutableContainers ) as? [ String: Any ] {
                 if(dataModel.updateState){
                     print("server get State response : " , json)
-                    let parameters = json["Parameters"] as! [String : Any]
                     
+                    guard let parameters = json["Parameters"] as? [String : Any] else {
+                        
+                        return
+                    }
                     dataModel.red = parameters["Red"] as! Int ;
+                    
                     dataModel.green = parameters["Green"] as! Int ;
                     dataModel.blue = parameters["Blue"] as! Int ;
-                   
+                    
                     dataModel.fade = parameters["FadeTime"] as! Int  ;
-                    dataModel.turnOn = (parameters["Power"] != nil) ;
+                    dataModel.turnOn = (parameters["Power"] as! Bool) ;
                     
                     dataModel.updateColor()
                     dataModel.updateState = false ;
@@ -62,6 +66,7 @@ class NetworkManager  {
         } catch let error {
             print("!! DATA FROM SERVER ERROR !! ")
             print(error.localizedDescription)
+            return
         }
     })
     task.resume()

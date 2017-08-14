@@ -37,6 +37,7 @@ class lampTabBarController : UITabBarController  {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -45,7 +46,11 @@ class lampTabBarController : UITabBarController  {
     
     
     func updateColor() {
-      self.color = UIColor(red : CGFloat(self.red) , green : CGFloat(self.green) , blue : CGFloat(self.blue) , alpha : 1.0 )
+      self.color = UIColor(red : CGFloat(self.red)/255 , green : CGFloat(self.green)/255 , blue : CGFloat(self.blue)/255 , alpha : 1.0 )
+    }
+    
+    func showError( str : String ){
+        
     }
     
     
@@ -65,8 +70,8 @@ class lampTabBarController : UITabBarController  {
            // attributesUpdate()
         }else{
            self.dictionaryUpdate()
-           return network.networkCall(dataModel : self )
         }
+        print("\n the server dictionary : \n ",serverDictionary)
         return network.networkCall(dataModel : self ) ;
     }
     

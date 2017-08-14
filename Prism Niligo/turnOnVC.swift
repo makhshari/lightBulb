@@ -87,8 +87,6 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         colorPicker.stroke = 3
         colorPicker.hexLabel.textColor = UIColor.lightGray
         
-        self.myColor = colorPicker.currentColor
-        
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -102,7 +100,6 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         colorPicker.stroke = 3
         colorPicker.hexLabel.textColor = UIColor.lightGray
         
-        self.myColor = colorPicker.currentColor
 
         super.init(coder: aDecoder)
     }
@@ -117,17 +114,22 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
     
     func updateState () {
         let lampConfig=self.tabBarController  as!  lampTabBarController
+        self.myColor = lampConfig.color
         while(true)
         {
             if(!lampConfig.updateState) {
                 
-                    print("update state ")
+                print("update state ")
+            
                     self.myColor = lampConfig.color
+                
                     if(lampConfig.turnOn == true){
                         self.turnOnButton.setOn(true, animated: false)
                         self.view.backgroundColor = self.myColor ;
                         colorPicker.adjustToColor(self.myColor )
                     }else{
+                        self.turnOnButton.setOn(false, animated: false)
+                        colorPicker.adjustToColor(self.myColor )
                         self.view.backgroundColor = UIColor.white ;
                 }
                  self.navBar.title = lampConfig.username
@@ -187,19 +189,21 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         if(turnOnButton.isOn){
             print("turnon button is on")
             lampConfig.turnOn=true;
-            self.myColor = lampConfig.color
+//            self.myColor = lampConfig.color
 
             UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
                 self.view.backgroundColor = self.myColor
             }, completion:nil)
             
         }else {
+             print("turnon button is off")
              lampConfig.turnOn=false;
              UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
                 self.view.backgroundColor = UIColor.white
             }, completion:nil)
         }
         if(lampConfig.networkCall(sender:self.view)==true) {
+            print("\n button network call ! \n")
         }else {
             print ("\n could not network call ")
         }
