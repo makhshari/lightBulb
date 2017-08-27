@@ -16,8 +16,7 @@ class lampTabBarController : UITabBarController  {
 
     var username = "Niligo Bulb"
     
-    
-    var color  = UIColor.cyan
+    var color  = UIColor()
     var turnOn = false
     var fade = 0
     var time = 0
@@ -26,7 +25,7 @@ class lampTabBarController : UITabBarController  {
     var green=255 ;
     var blue=255 ;
     
-    var configDictionary = [String : Any]()
+    var configDictionary = [String: [String: AnyObject]]()
     var dataDictionary = [String: Any]()
     var identityDictionary = [String: Any]()
     var serverDictionary = [String : Any]()
@@ -34,6 +33,9 @@ class lampTabBarController : UITabBarController  {
     var updateState = true ;
     
     var network = NetworkManager() ;
+    
+    var getStateURL = "http://192.168.1.40/WebServices/Core.svc/GetState"
+    var setColorWithPowerURL = "http://192.168.1.40/WebServices/Core.svc/SetPowerWithColor"
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -53,43 +55,98 @@ class lampTabBarController : UITabBarController  {
         
     }
     
+    func getState() {
+        
+        self.identityDictionary["SessionKey"] =  "E6B6D964B966E71180CC4A9D6544D113"
+        // self.identityDictionary["SessionKey"] = UserDefaults.standard.string(forKey: "sessionKey") ;
+        self.serverDictionary["Identity"] = self.identityDictionary ;
+        if(self.updateState) {
+            print("11")
+            if( !network.networkCall(self , self.getStateURL , serverDictionary as [String : AnyObject] ) ) {
+                print("lampConfig network call Failed !!!")
+            }
+            return
+        }
+    }
+    
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        print("lampconfig viewDidLoad")
         
-        self.identityDictionary["SessionKey"] = "E6B6D964B966E71180CC4A9D6544D113" ;
-        self.serverDictionary["Identity"] = self.identityDictionary ;
-        
-        network.networkCall( dataModel : self )
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         print("lampconfig viewWillAppear")
+        self.getState()
+    }
+    
     
     func networkCall(sender : AnyObject) -> Bool {
     
         if(sender.tag == 2 ){
             serverDictionary["Parameters"] = dataDictionary ;
             serverDictionary["Identity"] = identityDictionary ;
-           // attributesUpdate()
         }else{
            self.dictionaryUpdate()
         }
         print("\n the server dictionary : \n ",serverDictionary)
-        return network.networkCall(dataModel : self ) ;
+        return network.networkCall(self,self.setColorWithPowerURL,serverDictionary as [String : AnyObject] )
     }
     
-    func attributesUpdate()  {
-        self.red = self.dataDictionary["Red"] as! Int
-        self.green = self.dataDictionary["Green"] as! Int
-        self.blue = self.dataDictionary["Blue"] as! Int
+    func manageResponse(_ responseJson : [String : Any])  {
         
-        self.color = UIColor(red : CGFloat(self.red) , green : CGFloat(self.green) , blue : CGFloat(self.blue) , alpha : 1.0 )
         
-        self.turnOn = (self.dataDictionary["Power"] != nil)
-        self.fade = (self.dataDictionary["FadeTime"] as! Int)
-        self.time = (self.dataDictionary["Delay"] as! Int  )
+        print("GET STATE response json in attributes update \n" , responseJson)
+        
+        guard let parameters = responseJson["Parameters"] as? [String : Any] else {
+            print("parameters is null")
+            return
         }
+        guard let status = responseJson["Status"] as? [String : Any] else {
+            print("status error")
+            return
+        }
+        
+        self.red = parameters["Red"] as! Int
+        self.green = parameters["Green"] as! Int
+        self.blue = parameters["Blue"] as! Int
+        
+        self.updateColor()
+        
+        self.fade = parameters["FadeTime"] as! Int  ;
+        self.turnOn = parameters["Power"] as! Bool ;
+        self.time = 0
+        
+        self.updateState = false
+        
+        self.dictionaryUpdate()
+        print("12")
+
+        }
+    
+    func attributesUpdate(){
+    
+        print("999",dataDictionary)
+        print("333",dataDictionary["Red"]!)
+        dataDictionary = dataDictionary as [String : Any]
+        
+        
+        self.red = ( dataDictionary["Red"] as AnyObject ).integerValue
+        self.green = ( dataDictionary["Green"] as AnyObject ).integerValue
+        self.blue = ( dataDictionary["Blue"] as AnyObject ).integerValue
+        
+        self.updateColor()
+        
+        self.turnOn = dataDictionary["Power"] as! Bool
+        self.fade = dataDictionary["FadeTime"] as! Int
+        self.time = dataDictionary["Delay"] as! Int
+    }
 
     
     func dictionaryUpdate()  {
         
+        print("dictionary update")
         red = Int(self.color.Red)!
         green=Int(self.color.Green)!
         blue=Int(self.color.Blue)!
@@ -108,7 +165,7 @@ class lampTabBarController : UITabBarController  {
     }
         
     
-    }
+}
 extension UIColor {
     var hexString : String {
         var r: CGFloat = 0

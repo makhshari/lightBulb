@@ -16,5 +16,6 @@ import UIKit
         
         @IBOutlet weak var configLabel: UILabel!
         
+        @IBOutlet weak var configCircle: UIImageView!
     
 }

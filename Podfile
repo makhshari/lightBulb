@@ -9,4 +9,8 @@ target 'Prism Niligo' do
     #pod 'Alamofire-SwiftyJSON'
     #pod "Cely"
     pod 'ChromaColorPicker'
+    pod 'IQKeyboardManagerSwift'
+    pod  'SwiftSpinner'
+    pod 'TransitionButton'
+    #pod 'TKSwitcherCollection'
 end

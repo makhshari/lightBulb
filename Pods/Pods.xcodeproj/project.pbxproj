@@ -7,23 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CCA81B9BFAFFA78C63594B01881EAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D916C83567E315231B4CB798F2A64A /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D6A1BD58242CD949CB26178E4330C3 /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA92F33DFC6DF17B823161597138EF4E /* ChromaColorPicker-dummy.m */; };
-		46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50FCFF3172B4E414E373AD2FE5F123 /* ChromaAddButton.swift */; };
-		8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5537ADCF7F1457591909101ADAD892 /* UIColor+Utilities.swift */; };
-		92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B5C20A3E55114781399719932124A /* ColorModeToggleButton.swift */; };
-		AE49E6BF9109CD557C660CE9D5C51EDC /* Pods-Prism Niligo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD89EC0DE4117D221A44EFD09A2E373A /* Pods-Prism Niligo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247653E98560502BAE1E1C8FC66EBCA5 /* ChromaColorPicker.swift */; };
-		DF8F743857E5A9CACE432CD3499EAC50 /* Pods-Prism Niligo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F84ED23DF7AD1A8A1F184283F7085A /* Pods-Prism Niligo-dummy.m */; };
-		EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AA62CF1621F2291E9E8BCBC00ACF1B /* ChromaHandle.swift */; };
-		F104FCD385B5DDF3F46247EC769096DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E73A28BF3FEF50764DDD75A8CDC44B /* ChromaShadeSlider.swift */; };
+		0261624BFB3FBA99AA163A561474AB4B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D450AAFE419835EB157EC147E4529D /* SwiftSpinner.swift */; };
+		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21C18F6DA3D76CB52B0E8E860318B4 /* IQToolbar.swift */; };
+		071246B686FE2E11443EC6436CA5D305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		126C88F6B4D979EE050AC32DF734FF66 /* Pods-Prism Niligo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F84ED23DF7AD1A8A1F184283F7085A /* Pods-Prism Niligo-dummy.m */; };
+		15F7C34AF4C69CAEEE35A496CC94C414 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2E069C3DC9EF7E79174576EDDF7360 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979A0C5B25CBC0D82638D7CAE60848C /* IQTitleBarButtonItem.swift */; };
+		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45366041F78C66A80CC0C9AF03BF04 /* IQUIScrollView+Additions.swift */; };
+		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0ABE29344CBFF51C8B35EDB6D82D90C /* IQKeyboardManager.bundle */; };
+		2CCA81B9BFAFFA78C63594B01881EAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97575147D72E6E24D3FFCA9B8249593B /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 846FDEE10D7830F27746D89A957296A7 /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1139676CB8A5EB7F40E799A4870AE7 /* IQUIView+Hierarchy.swift */; };
+		3C6AFC2891E05E3BFABBEBA6B491B607 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6935A39D4B0B67D841CDDFBAEC9F945 /* SwiftSpinner-dummy.m */; };
+		40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E923940E77144D42EABC3EEB646A5A /* ChromaColorPicker-dummy.m */; };
+		46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B3879FF991766600590CF47695CF6 /* ChromaAddButton.swift */; };
+		4713A7C5258D46F3F3EA82A1AC2FCC5F /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F3C203E3E87FB02549D5811DBF6AF /* TransitionButton-dummy.m */; };
+		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6CE232D1A2BC0BED0A1E297577AEEE /* IQKeyboardManager.swift */; };
+		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC66DADE1CB838353FA1A4570BA3AF /* IQUIWindow+Hierarchy.swift */; };
+		6DF350639B04CACC10A1D15CC4C09245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
+		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C936DCA89927A977E18E305201A3CD5 /* IQUIViewController+Additions.swift */; };
+		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E93CB5A02C4F8AAD38A9DE47C9BD232 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B8954E047591BD331BEF8361E3624 /* IQTextView.swift */; };
+		8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E57D4ED33E5AE8BDB927A3D31E435 /* UIColor+Utilities.swift */; };
+		92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE5E20FEB7292A0928DCACC1DC412E /* ColorModeToggleButton.swift */; };
+		95677A9C5AE1FFD86C751424C8C5FC38 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F56B7F36BB6A4073BEF4BA5E2BFA40E /* CustomTransitionViewController.swift */; };
+		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132552A562BB9DB1420128C85DEB85B9 /* IQKeyboardManagerConstants.swift */; };
+		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E760259D475998DC9DE3CE83AF69271 /* IQUIView+IQKeyboardToolbar.swift */; };
+		9D37CC98746B2109FE9CEED1178D5F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		9E6444C83ABEF7DFC5DE7B8CD6690A6A /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E08B5C1A194560BAF066275E4D4C2 /* SpinerLayer.swift */; };
+		A04710171EF146B7E5872A7B053D83BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		ACC16810FFACB85B661032F4EDC0AF29 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E40C3064AC327AEDAB413B4D6727D2 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD9ACD3FB79C8C6F30DCBA91E52DEE50 /* Pods-Prism Niligo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD89EC0DE4117D221A44EFD09A2E373A /* Pods-Prism Niligo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F7D51449A5E0AB3ACABB2262FE069 /* IQKeyboardManagerSwift-dummy.m */; };
+		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC087E61550D84FD599995105B09280 /* IQUITextFieldView+Additions.swift */; };
+		BA82D711E8A489A552EA06C006C4AB9B /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D148F0BD3515DBFEEA52FC29BAD951 /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
+		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47678934A7F423E8C26165FC00A3EE4D /* IQKeyboardReturnKeyHandler.swift */; };
+		C659D3CE2B56EEAC118A7D7F99A6CF79 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DD8E911BB0BE690A6A7A916EE7498 /* CGRectExtension.swift */; };
+		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365509E8F62A7098E1B9C21F50AD57B /* IQPreviousNextView.swift */; };
+		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD2CED1AFDE7E4C349D6E6C8467459 /* IQNSArray+Sort.swift */; };
+		CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18427E27CA88C12E6F69973C48984C /* ChromaColorPicker.swift */; };
+		D6A9674437BE69FB0DDBAD56CC974A54 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108E3354E7B34AE5B72B57785E0272F6 /* FadeTransition.swift */; };
+		DDD0A550A5E708106031092D43007F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31CF084496C1270E2A087575E1DBB0 /* ChromaHandle.swift */; };
+		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED473F495A80B3B8EACDFA4355665E /* IQKeyboardManagerConstantsInternal.swift */; };
+		EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EEC716985B0F76C642AB9CAD92142 /* IQBarButtonItem.swift */; };
+		F755E0B5AC99FF43EEB0AD2B1BE7D50E /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE71F1E72ED956A43CB13E14C433887 /* TransitionButton.swift */; };
+		FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE0D0C5115EC4B3604ADB2868F9613B /* ChromaShadeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		85E4B022EF5678E204E454E045AD381A /* PBXContainerItemProxy */ = {
+		2F6B72CE68BACA6E8E7892C3869C036D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C235F77E101E742652CCF98FFDFA5182;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		3A71A322CD342D51DD5378405797E6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AE9CC356D0357EE59ACD27B61062BD;
+			remoteInfo = TransitionButton;
+		};
+		B8C74A157750DE7D52318C498D5ED294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE9EA1E55E1C34097ED23DC6B060D832;
+			remoteInfo = SwiftSpinner;
+		};
+		CD2819B7CC9AC547F5855F472437A60B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -33,41 +92,118 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01D916C83567E315231B4CB798F2A64A /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		047ACA514352BCEEA30D3C60E3AFB5F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0603867CA7B7203B5A14A58885B842C2 /* Pods-Prism Niligo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Prism Niligo.release.xcconfig"; sourceTree = "<group>"; };
+		092F3E76997C97B88510374E8AB2B703 /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
+		0F1A2B68664EFB2232FF958422FFC80C /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
+		108E3354E7B34AE5B72B57785E0272F6 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
+		132552A562BB9DB1420128C85DEB85B9 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		1762C3B88BFDEB5876B9FE1AB1FF1153 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19626198C3F724551CA5215FD4D81104 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19773449FC1BA87BB6C5E94F338F50C2 /* Pods_Prism_Niligo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Prism_Niligo.framework; path = "Pods-Prism Niligo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A2B5C20A3E55114781399719932124A /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		1B2E08B5C1A194560BAF066275E4D4C2 /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
 		1D06663922FE253E56B30FD644BE2C3C /* Pods-Prism Niligo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Prism Niligo-frameworks.sh"; sourceTree = "<group>"; };
-		23A2FAD655880E5DB57386A085B5DF7B /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		247653E98560502BAE1E1C8FC66EBCA5 /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
-		3A5537ADCF7F1457591909101ADAD892 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		1E93CB5A02C4F8AAD38A9DE47C9BD232 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		2CDC66DADE1CB838353FA1A4570BA3AF /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3437CC7307D34FF56428FB5D75CF0F22 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D148F0BD3515DBFEEA52FC29BAD951 /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
 		3F648BFC15BBC78C6983D6DA878CC607 /* Pods-Prism Niligo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Prism Niligo-acknowledgements.plist"; sourceTree = "<group>"; };
 		42F84ED23DF7AD1A8A1F184283F7085A /* Pods-Prism Niligo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Prism Niligo-dummy.m"; sourceTree = "<group>"; };
+		47678934A7F423E8C26165FC00A3EE4D /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
 		4D1020CA2E32EE78DF1D6ABD9E69FDB2 /* Pods-Prism Niligo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Prism Niligo.debug.xcconfig"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6B50FCFF3172B4E414E373AD2FE5F123 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
+		542F7D51449A5E0AB3ACABB2262FE069 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		55EAD6121EF649DBC82B42CF6A7B8AA9 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
+		588DD8E911BB0BE690A6A7A916EE7498 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
+		5C073A11CD5778E58C276A1C51293CF4 /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionButton.framework; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E760259D475998DC9DE3CE83AF69271 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		5FE71F1E72ED956A43CB13E14C433887 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
+		69377216C6073E410DDDD19585C5CC46 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0A6132AFC1F81384450A17BEAEE191 /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
+		6E1F78807645EAA20CAAA376D10279A9 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
 		7169AFAB7DD1C56CDC17E5900CF3F2D8 /* Pods-Prism Niligo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Prism Niligo.modulemap"; sourceTree = "<group>"; };
 		772B9EE5230C2222BF7624D0CC76280F /* Pods-Prism Niligo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Prism Niligo-resources.sh"; sourceTree = "<group>"; };
+		78C05D9CB61A899E08F0F58F62AAE903 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F45366041F78C66A80CC0C9AF03BF04 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		7F56B7F36BB6A4073BEF4BA5E2BFA40E /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		82153D815B65811F265A124ECB5EDAF5 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		846FDEE10D7830F27746D89A957296A7 /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
+		876B8954E047591BD331BEF8361E3624 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		88750304C889F62725CE055BEB1B0662 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D450AAFE419835EB157EC147E4529D /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
 		89F4006912F15FB51B7C4499B4BD07FB /* Pods-Prism Niligo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Prism Niligo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		91AA62CF1621F2291E9E8BCBC00ACF1B /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
+		8CE0D0C5115EC4B3604ADB2868F9613B /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		8EE0FB47E83734319E374A7A00110E59 /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TransitionButton.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0D94053508D5642721C6E67B7A3453E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A21CD772EDC8CC93A011BC5D447476E3 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
-		A6D6A1BD58242CD949CB26178E4330C3 /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
-		B347D8A3C3157F850CC82E4C27252281 /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
-		BA92F33DFC6DF17B823161597138EF4E /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
+		97575147D72E6E24D3FFCA9B8249593B /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		9C936DCA89927A977E18E305201A3CD5 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		A44F3C203E3E87FB02549D5811DBF6AF /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
+		A4E40C3064AC327AEDAB413B4D6727D2 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		A729ACFF999A082A6EC49EB281B24DF9 /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		A979A0C5B25CBC0D82638D7CAE60848C /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		A9FA4832BE64E55279FDD793C912614E /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		ABC087E61550D84FD599995105B09280 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		AD5B3879FF991766600590CF47695CF6 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
+		AF64F9102AFA47D5DD025247F2B304FD /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		B74E57D4ED33E5AE8BDB927A3D31E435 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		BB31CF084496C1270E2A087575E1DBB0 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
 		BD89EC0DE4117D221A44EFD09A2E373A /* Pods-Prism Niligo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Prism Niligo-umbrella.h"; sourceTree = "<group>"; };
-		D8E73A28BF3FEF50764DDD75A8CDC44B /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
-		DB607B19D826E3C9C80523B3CFE58A51 /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		C3E923940E77144D42EABC3EEB646A5A /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
+		C4CD2CED1AFDE7E4C349D6E6C8467459 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		CFED473F495A80B3B8EACDFA4355665E /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		D0ABE29344CBFF51C8B35EDB6D82D90C /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		D1A6281F6A38A403647C1F36D5CB4CFD /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EEC716985B0F76C642AB9CAD92142 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		D6935A39D4B0B67D841CDDFBAEC9F945 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		DA1139676CB8A5EB7F40E799A4870AE7 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		DA21C18F6DA3D76CB52B0E8E860318B4 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		E3CE5E20FEB7292A0928DCACC1DC412E /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		E54829683DEC3BA11130E580ED6197BB /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		EC0EDABE0DF6BBC4A640107FFBEAA298 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE2E069C3DC9EF7E79174576EDDF7360 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		F365509E8F62A7098E1B9C21F50AD57B /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		F41988E4F536DC5A75ECAC923369DCE1 /* Pods_Prism_Niligo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Prism_Niligo.framework; path = "Pods-Prism Niligo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD18427E27CA88C12E6F69973C48984C /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
+		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE6CE232D1A2BC0BED0A1E297577AEEE /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38D63326748316F71F80556603CE394F /* Frameworks */ = {
+		5C3A92A1D67987608D5FA19EAAC3BE54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F104FCD385B5DDF3F46247EC769096DA /* Foundation.framework in Frameworks */,
+				DDD0A550A5E708106031092D43007F42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB5A5FA54C2F33454BD2E1CB52928D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071246B686FE2E11443EC6436CA5D305 /* Foundation.framework in Frameworks */,
+				6DF350639B04CACC10A1D15CC4C09245 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A5C814ACEB86CB06CD6C51383982FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */,
+				A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */,
+				81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */,
+				EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B9BDC1B31A4F1A7EE2F91E31352836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D37CC98746B2109FE9CEED1178D5F0C /* Foundation.framework in Frameworks */,
+				A04710171EF146B7E5872A7B053D83BE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,51 +218,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A173344656D013FFA0E1F162A8851FF /* Products */ = {
+		13225049B4342487C8856A4E55007CF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				23A2FAD655880E5DB57386A085B5DF7B /* ChromaColorPicker.framework */,
-				19773449FC1BA87BB6C5E94F338F50C2 /* Pods_Prism_Niligo.framework */,
+				D0ABE29344CBFF51C8B35EDB6D82D90C /* IQKeyboardManager.bundle */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		479A97DD6AC47ABE9BD1BDDCFE7CBD67 /* ChromaColorPicker */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B50FCFF3172B4E414E373AD2FE5F123 /* ChromaAddButton.swift */,
-				A6D6A1BD58242CD949CB26178E4330C3 /* ChromaColorPicker.h */,
-				247653E98560502BAE1E1C8FC66EBCA5 /* ChromaColorPicker.swift */,
-				91AA62CF1621F2291E9E8BCBC00ACF1B /* ChromaHandle.swift */,
-				D8E73A28BF3FEF50764DDD75A8CDC44B /* ChromaShadeSlider.swift */,
-				1A2B5C20A3E55114781399719932124A /* ColorModeToggleButton.swift */,
-				3A5537ADCF7F1457591909101ADAD892 /* UIColor+Utilities.swift */,
-				55D688BA080FF596F4BA556880C0D12E /* Support Files */,
+				8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38A036F74BEC2C42B05C1C50A5E78237 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8E31408C3D65BB8E4BBCCB10AE99A /* ChromaColorPicker */,
+				81C88E647E7E55A1A49FFF85D99632AC /* IQKeyboardManagerSwift */,
+				4783AC4172050888D7B72A0665B82798 /* SwiftSpinner */,
+				96C6993FD78A5B6186E04F1813A363F9 /* TransitionButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3CE8E31408C3D65BB8E4BBCCB10AE99A /* ChromaColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B3879FF991766600590CF47695CF6 /* ChromaAddButton.swift */,
+				846FDEE10D7830F27746D89A957296A7 /* ChromaColorPicker.h */,
+				FD18427E27CA88C12E6F69973C48984C /* ChromaColorPicker.swift */,
+				BB31CF084496C1270E2A087575E1DBB0 /* ChromaHandle.swift */,
+				8CE0D0C5115EC4B3604ADB2868F9613B /* ChromaShadeSlider.swift */,
+				E3CE5E20FEB7292A0928DCACC1DC412E /* ColorModeToggleButton.swift */,
+				B74E57D4ED33E5AE8BDB927A3D31E435 /* UIColor+Utilities.swift */,
+				6D01E881D5F51E185DF07D3FF191507F /* Support Files */,
 			);
 			name = ChromaColorPicker;
 			path = ChromaColorPicker;
 			sourceTree = "<group>";
 		};
-		4DEC7A050EEC647F28508C190E2F5430 /* Pods */ = {
+		4783AC4172050888D7B72A0665B82798 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				479A97DD6AC47ABE9BD1BDDCFE7CBD67 /* ChromaColorPicker */,
+				A4E40C3064AC327AEDAB413B4D6727D2 /* SwiftSpinner.h */,
+				88D450AAFE419835EB157EC147E4529D /* SwiftSpinner.swift */,
+				B9260671409A99FFC2E538B1D8B521D8 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		55D688BA080FF596F4BA556880C0D12E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B347D8A3C3157F850CC82E4C27252281 /* ChromaColorPicker.modulemap */,
-				A21CD772EDC8CC93A011BC5D447476E3 /* ChromaColorPicker.xcconfig */,
-				BA92F33DFC6DF17B823161597138EF4E /* ChromaColorPicker-dummy.m */,
-				DB607B19D826E3C9C80523B3CFE58A51 /* ChromaColorPicker-prefix.pch */,
-				01D916C83567E315231B4CB798F2A64A /* ChromaColorPicker-umbrella.h */,
-				A0D94053508D5642721C6E67B7A3453E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChromaColorPicker";
+			name = SwiftSpinner;
+			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
 		5AA6CA1E6A7DB3EFD8325D7207021B9E /* Pods-Prism Niligo */ = {
@@ -147,6 +290,60 @@
 			path = "Target Support Files/Pods-Prism Niligo";
 			sourceTree = "<group>";
 		};
+		5DAD47BD4C0225916037BFB3999B3DD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88750304C889F62725CE055BEB1B0662 /* Info.plist */,
+				82153D815B65811F265A124ECB5EDAF5 /* IQKeyboardManagerSwift.modulemap */,
+				EC0EDABE0DF6BBC4A640107FFBEAA298 /* IQKeyboardManagerSwift.xcconfig */,
+				542F7D51449A5E0AB3ACABB2262FE069 /* IQKeyboardManagerSwift-dummy.m */,
+				6E1F78807645EAA20CAAA376D10279A9 /* IQKeyboardManagerSwift-prefix.pch */,
+				1E93CB5A02C4F8AAD38A9DE47C9BD232 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		62F7B1F543960B4CC07E9969C8E82C60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C05D9CB61A899E08F0F58F62AAE903 /* ChromaColorPicker.framework */,
+				3437CC7307D34FF56428FB5D75CF0F22 /* IQKeyboardManagerSwift.framework */,
+				F41988E4F536DC5A75ECAC923369DCE1 /* Pods_Prism_Niligo.framework */,
+				D1A6281F6A38A403647C1F36D5CB4CFD /* SwiftSpinner.framework */,
+				5C073A11CD5778E58C276A1C51293CF4 /* TransitionButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		698B9055D65B239893C3202994625076 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69377216C6073E410DDDD19585C5CC46 /* Info.plist */,
+				8EE0FB47E83734319E374A7A00110E59 /* TransitionButton.modulemap */,
+				092F3E76997C97B88510374E8AB2B703 /* TransitionButton.xcconfig */,
+				A44F3C203E3E87FB02549D5811DBF6AF /* TransitionButton-dummy.m */,
+				6A0A6132AFC1F81384450A17BEAEE191 /* TransitionButton-prefix.pch */,
+				35D148F0BD3515DBFEEA52FC29BAD951 /* TransitionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionButton";
+			sourceTree = "<group>";
+		};
+		6D01E881D5F51E185DF07D3FF191507F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A2B68664EFB2232FF958422FFC80C /* ChromaColorPicker.modulemap */,
+				55EAD6121EF649DBC82B42CF6A7B8AA9 /* ChromaColorPicker.xcconfig */,
+				C3E923940E77144D42EABC3EEB646A5A /* ChromaColorPicker-dummy.m */,
+				A729ACFF999A082A6EC49EB281B24DF9 /* ChromaColorPicker-prefix.pch */,
+				97575147D72E6E24D3FFCA9B8249593B /* ChromaColorPicker-umbrella.h */,
+				1762C3B88BFDEB5876B9FE1AB1FF1153 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChromaColorPicker";
+			sourceTree = "<group>";
+		};
 		7655AEF3DE94FA5A913D7E24DD6288D0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,40 +356,81 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4DEC7A050EEC647F28508C190E2F5430 /* Pods */,
-				2A173344656D013FFA0E1F162A8851FF /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				38A036F74BEC2C42B05C1C50A5E78237 /* Pods */,
+				62F7B1F543960B4CC07E9969C8E82C60 /* Products */,
 				7655AEF3DE94FA5A913D7E24DD6288D0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		81C88E647E7E55A1A49FFF85D99632AC /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				D30EEC716985B0F76C642AB9CAD92142 /* IQBarButtonItem.swift */,
+				FE6CE232D1A2BC0BED0A1E297577AEEE /* IQKeyboardManager.swift */,
+				132552A562BB9DB1420128C85DEB85B9 /* IQKeyboardManagerConstants.swift */,
+				CFED473F495A80B3B8EACDFA4355665E /* IQKeyboardManagerConstantsInternal.swift */,
+				47678934A7F423E8C26165FC00A3EE4D /* IQKeyboardReturnKeyHandler.swift */,
+				C4CD2CED1AFDE7E4C349D6E6C8467459 /* IQNSArray+Sort.swift */,
+				F365509E8F62A7098E1B9C21F50AD57B /* IQPreviousNextView.swift */,
+				876B8954E047591BD331BEF8361E3624 /* IQTextView.swift */,
+				A979A0C5B25CBC0D82638D7CAE60848C /* IQTitleBarButtonItem.swift */,
+				DA21C18F6DA3D76CB52B0E8E860318B4 /* IQToolbar.swift */,
+				7F45366041F78C66A80CC0C9AF03BF04 /* IQUIScrollView+Additions.swift */,
+				ABC087E61550D84FD599995105B09280 /* IQUITextFieldView+Additions.swift */,
+				DA1139676CB8A5EB7F40E799A4870AE7 /* IQUIView+Hierarchy.swift */,
+				5E760259D475998DC9DE3CE83AF69271 /* IQUIView+IQKeyboardToolbar.swift */,
+				9C936DCA89927A977E18E305201A3CD5 /* IQUIViewController+Additions.swift */,
+				2CDC66DADE1CB838353FA1A4570BA3AF /* IQUIWindow+Hierarchy.swift */,
+				13225049B4342487C8856A4E55007CF8 /* Resources */,
+				5DAD47BD4C0225916037BFB3999B3DD3 /* Support Files */,
 			);
-			name = Frameworks;
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */,
+				ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */,
+				E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */,
+				FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		96C6993FD78A5B6186E04F1813A363F9 /* TransitionButton */ = {
+			isa = PBXGroup;
+			children = (
+				588DD8E911BB0BE690A6A7A916EE7498 /* CGRectExtension.swift */,
+				7F56B7F36BB6A4073BEF4BA5E2BFA40E /* CustomTransitionViewController.swift */,
+				108E3354E7B34AE5B72B57785E0272F6 /* FadeTransition.swift */,
+				1B2E08B5C1A194560BAF066275E4D4C2 /* SpinerLayer.swift */,
+				5FE71F1E72ED956A43CB13E14C433887 /* TransitionButton.swift */,
+				698B9055D65B239893C3202994625076 /* Support Files */,
+			);
+			name = TransitionButton;
+			path = TransitionButton;
+			sourceTree = "<group>";
+		};
+		B9260671409A99FFC2E538B1D8B521D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				047ACA514352BCEEA30D3C60E3AFB5F5 /* Info.plist */,
+				E54829683DEC3BA11130E580ED6197BB /* SwiftSpinner.modulemap */,
+				A9FA4832BE64E55279FDD793C912614E /* SwiftSpinner.xcconfig */,
+				D6935A39D4B0B67D841CDDFBAEC9F945 /* SwiftSpinner-dummy.m */,
+				AF64F9102AFA47D5DD025247F2B304FD /* SwiftSpinner-prefix.pch */,
+				EE2E069C3DC9EF7E79174576EDDF7360 /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		52C6B0FD59539604CE278DE45B3A35E8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE49E6BF9109CD557C660CE9D5C51EDC /* Pods-Prism Niligo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		537E3AFB9460117F3179E3397FA5A563 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,25 +440,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7516E4678131693CA20C09B09D3EBB72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82D711E8A489A552EA06C006C4AB9B /* TransitionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9569609CA7BE4BE37650861BB301F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9ACD3FB79C8C6F30DCBA91E52DEE50 /* Pods-Prism Niligo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82B5F04767CB991E84734A54D0ABA5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509AA3D2E40DE0D92534C1BCEE3E7B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7C34AF4C69CAEEE35A496CC94C414 /* SwiftSpinner-umbrella.h in Headers */,
+				ACC16810FFACB85B661032F4EDC0AF29 /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0EEB87557B22D98B260352847731C057 /* Pods-Prism Niligo */ = {
+		78AE9CC356D0357EE59ACD27B61062BD /* TransitionButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDEF54FF963F7AF6F3323C16D30C1BE8 /* Build configuration list for PBXNativeTarget "Pods-Prism Niligo" */;
+			buildConfigurationList = 0550D6CCE9B2704CA5C43195F32FDDD6 /* Build configuration list for PBXNativeTarget "TransitionButton" */;
 			buildPhases = (
-				7728D250DB8CC8C85E32453E51C4F179 /* Sources */,
-				38D63326748316F71F80556603CE394F /* Frameworks */,
-				52C6B0FD59539604CE278DE45B3A35E8 /* Headers */,
+				1D49CB5DD9229E0118DAF7A965E495BF /* Sources */,
+				5EB5A5FA54C2F33454BD2E1CB52928D9 /* Frameworks */,
+				7516E4678131693CA20C09B09D3EBB72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EB53EDA2DD63AC3F49F4F05AB27A792 /* PBXTargetDependency */,
 			);
-			name = "Pods-Prism Niligo";
-			productName = "Pods-Prism Niligo";
-			productReference = 19773449FC1BA87BB6C5E94F338F50C2 /* Pods_Prism_Niligo.framework */;
+			name = TransitionButton;
+			productName = TransitionButton;
+			productReference = 5C073A11CD5778E58C276A1C51293CF4 /* TransitionButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99AA48135ECB557858428F797600458F /* ChromaColorPicker */ = {
@@ -237,7 +507,63 @@
 			);
 			name = ChromaColorPicker;
 			productName = ChromaColorPicker;
-			productReference = 23A2FAD655880E5DB57386A085B5DF7B /* ChromaColorPicker.framework */;
+			productReference = 78C05D9CB61A899E08F0F58F62AAE903 /* ChromaColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C5CE05A712EF50BB123A41D8EFC0CB /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				B0CAA73D50E134E589B648ABF6682839 /* Sources */,
+				81A5C814ACEB86CB06CD6C51383982FE /* Frameworks */,
+				918D58E08AC7FD6CC66B75FF048005F7 /* Resources */,
+				C82B5F04767CB991E84734A54D0ABA5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = 3437CC7307D34FF56428FB5D75CF0F22 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCF69837D83ADAD0B7DC1BBA38D6A596 /* Pods-Prism Niligo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2791D73C1DB89826D1D8EF88AE4C0520 /* Build configuration list for PBXNativeTarget "Pods-Prism Niligo" */;
+			buildPhases = (
+				D9B40E5E72EF4CF4A5CEB1B4D0865983 /* Sources */,
+				5C3A92A1D67987608D5FA19EAAC3BE54 /* Frameworks */,
+				78C9569609CA7BE4BE37650861BB301F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B51296E98EE66BAF8278A3C84A33803 /* PBXTargetDependency */,
+				DE88C3D98C6FEA3A0537E0A5B75F137B /* PBXTargetDependency */,
+				9A3EB4231253AA9AEFD5C35DDAA74FFC /* PBXTargetDependency */,
+				847AA0F1C21ED8C74658A8951A9E5772 /* PBXTargetDependency */,
+			);
+			name = "Pods-Prism Niligo";
+			productName = "Pods-Prism Niligo";
+			productReference = F41988E4F536DC5A75ECAC923369DCE1 /* Pods_Prism_Niligo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE9EA1E55E1C34097ED23DC6B060D832 /* SwiftSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D849DD84338DB6C6FE8EDD5F351E8C0B /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildPhases = (
+				2DA670624709565FF254EFB680F0BE2B /* Sources */,
+				E4B9BDC1B31A4F1A7EE2F91E31352836 /* Frameworks */,
+				E509AA3D2E40DE0D92534C1BCEE3E7B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSpinner;
+			productName = SwiftSpinner;
+			productReference = D1A6281F6A38A403647C1F36D5CB4CFD /* SwiftSpinner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,22 +583,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2A173344656D013FFA0E1F162A8851FF /* Products */;
+			productRefGroup = 62F7B1F543960B4CC07E9969C8E82C60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				99AA48135ECB557858428F797600458F /* ChromaColorPicker */,
-				0EEB87557B22D98B260352847731C057 /* Pods-Prism Niligo */,
+				C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */,
+				CCF69837D83ADAD0B7DC1BBA38D6A596 /* Pods-Prism Niligo */,
+				FE9EA1E55E1C34097ED23DC6B060D832 /* SwiftSpinner */,
+				78AE9CC356D0357EE59ACD27B61062BD /* TransitionButton */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		918D58E08AC7FD6CC66B75FF048005F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7728D250DB8CC8C85E32453E51C4F179 /* Sources */ = {
+		1D49CB5DD9229E0118DAF7A965E495BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8F743857E5A9CACE432CD3499EAC50 /* Pods-Prism Niligo-dummy.m in Sources */,
+				C659D3CE2B56EEAC118A7D7F99A6CF79 /* CGRectExtension.swift in Sources */,
+				95677A9C5AE1FFD86C751424C8C5FC38 /* CustomTransitionViewController.swift in Sources */,
+				D6A9674437BE69FB0DDBAD56CC974A54 /* FadeTransition.swift in Sources */,
+				9E6444C83ABEF7DFC5DE7B8CD6690A6A /* SpinerLayer.swift in Sources */,
+				4713A7C5258D46F3F3EA82A1AC2FCC5F /* TransitionButton-dummy.m in Sources */,
+				F755E0B5AC99FF43EEB0AD2B1BE7D50E /* TransitionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA670624709565FF254EFB680F0BE2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6AFC2891E05E3BFABBEBA6B491B607 /* SwiftSpinner-dummy.m in Sources */,
+				0261624BFB3FBA99AA163A561474AB4B /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CAA73D50E134E589B648ABF6682839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */,
+				4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */,
+				9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */,
+				EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */,
+				CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */,
+				88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */,
+				1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */,
+				02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */,
+				2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */,
+				B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */,
+				3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */,
+				9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */,
+				64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B40E5E72EF4CF4A5CEB1B4D0865983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126C88F6B4D979EE050AC32DF734FF66 /* Pods-Prism Niligo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,18 +679,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2EB53EDA2DD63AC3F49F4F05AB27A792 /* PBXTargetDependency */ = {
+		2B51296E98EE66BAF8278A3C84A33803 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChromaColorPicker;
 			target = 99AA48135ECB557858428F797600458F /* ChromaColorPicker */;
-			targetProxy = 85E4B022EF5678E204E454E045AD381A /* PBXContainerItemProxy */;
+			targetProxy = CD2819B7CC9AC547F5855F472437A60B /* PBXContainerItemProxy */;
+		};
+		847AA0F1C21ED8C74658A8951A9E5772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionButton;
+			target = 78AE9CC356D0357EE59ACD27B61062BD /* TransitionButton */;
+			targetProxy = 3A71A322CD342D51DD5378405797E6D7 /* PBXContainerItemProxy */;
+		};
+		9A3EB4231253AA9AEFD5C35DDAA74FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = FE9EA1E55E1C34097ED23DC6B060D832 /* SwiftSpinner */;
+			targetProxy = B8C74A157750DE7D52318C498D5ED294 /* PBXContainerItemProxy */;
+		};
+		DE88C3D98C6FEA3A0537E0A5B75F137B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */;
+			targetProxy = 2F6B72CE68BACA6E8E7892C3869C036D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0AD16C3F2624C40103FE2BBC47976BE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A21CD772EDC8CC93A011BC5D447476E3 /* ChromaColorPicker.xcconfig */;
+			baseConfigurationReference = 55EAD6121EF649DBC82B42CF6A7B8AA9 /* ChromaColorPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -384,6 +788,75 @@
 			};
 			name = Debug;
 		};
+		1CFDDD84C93EBA0CC433A1F494B55620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FA4832BE64E55279FDD793C912614E /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D7F1C5C0ABA497631B7B468CB0A5A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0EDABE0DF6BBC4A640107FFBEAA298 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,7 +901,218 @@
 			};
 			name = Release;
 		};
-		806C9BADE6CA946D6480DEC3EEBC1CF7 /* Debug */ = {
+		7D2F93585F0D3C65AAFA1D07E50DC877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092F3E76997C97B88510374E8AB2B703 /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F50D37D05DD50561456D10CC20A1BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0603867CA7B7203B5A14A58885B842C2 /* Pods-Prism Niligo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Prism Niligo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Prism Niligo/Pods-Prism Niligo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Prism_Niligo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1A303A542ED1EB4DECB5107556FBB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092F3E76997C97B88510374E8AB2B703 /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4D54C8EB0572DC293FB1EB57005B3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EAD6121EF649DBC82B42CF6A7B8AA9 /* ChromaColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ChromaColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5F48C3CCA52D3A1FFF0D4EEBFA952EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FA4832BE64E55279FDD793C912614E /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D89067A40C8B52AA162E1A90612750F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0EDABE0DF6BBC4A640107FFBEAA298 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB2B8C28923D3337DC924E65FA3B8D63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D1020CA2E32EE78DF1D6ABD9E69FDB2 /* Pods-Prism Niligo.debug.xcconfig */;
 			buildSettings = {
@@ -467,82 +1151,27 @@
 			};
 			name = Debug;
 		};
-		B4D54C8EB0572DC293FB1EB57005B3EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A21CD772EDC8CC93A011BC5D447476E3 /* ChromaColorPicker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ChromaColorPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FDAA298AF03CE650828C6FFBD81C6100 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0603867CA7B7203B5A14A58885B842C2 /* Pods-Prism Niligo.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Prism Niligo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Prism Niligo/Pods-Prism Niligo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Prism_Niligo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0550D6CCE9B2704CA5C43195F32FDDD6 /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2F93585F0D3C65AAFA1D07E50DC877 /* Debug */,
+				A1A303A542ED1EB4DECB5107556FBB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2791D73C1DB89826D1D8EF88AE4C0520 /* Build configuration list for PBXNativeTarget "Pods-Prism Niligo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2B8C28923D3337DC924E65FA3B8D63 /* Debug */,
+				9F50D37D05DD50561456D10CC20A1BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -561,11 +1190,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDEF54FF963F7AF6F3323C16D30C1BE8 /* Build configuration list for PBXNativeTarget "Pods-Prism Niligo" */ = {
+		D849DD84338DB6C6FE8EDD5F351E8C0B /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				806C9BADE6CA946D6480DEC3EEBC1CF7 /* Debug */,
-				FDAA298AF03CE650828C6FFBD81C6100 /* Release */,
+				C5F48C3CCA52D3A1FFF0D4EEBFA952EF /* Debug */,
+				1CFDDD84C93EBA0CC433A1F494B55620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C5CE05A712EF50BB123A41D8EFC0CB /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7F1C5C0ABA497631B7B468CB0A5A66 /* Debug */,
+				D89067A40C8B52AA162E1A90612750F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

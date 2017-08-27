@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Prism Niligo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSpinner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TransitionButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EEB87557B22D98B260352847731C057</key>
+		<key>78AE9CC356D0357EE59ACD27B61062BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>99AA48135ECB557858428F797600458F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C235F77E101E742652CCF98FFDFA5182</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCF69837D83ADAD0B7DC1BBA38D6A596</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE9EA1E55E1C34097ED23DC6B060D832</key>
 		<dict>
 			<key>primary</key>
 			<true/>

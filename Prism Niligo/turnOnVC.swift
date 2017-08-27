@@ -8,9 +8,11 @@
 
 import UIKit
 import ChromaColorPicker
-    
+import SwiftSpinner
 
-class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDelegate {
+
+class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDelegate , UINavigationControllerDelegate {
+    
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
         
         self.myColor = colorPicker.currentColor
@@ -18,7 +20,7 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         lampConfig.color = colorPicker.currentColor
         if(lampConfig.turnOn==true) {
             if(lampConfig.networkCall(sender:self.view)==true) {
-                UIView.animate(withDuration:0, delay: 0.0, animations: {
+                UIView.animate(withDuration: TimeInterval(lampConfig.fade/1000), delay: TimeInterval(lampConfig.time), animations: {
                     self.view.backgroundColor = self.myColor
                 }, completion:nil)
             }else {
@@ -29,17 +31,22 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let height: CGFloat = 200 //whatever height you want
-        self.navigationController?.navigationBar.frame.size.height = height
-//        self.navBar = CGRect(x: 0, y: 0, width: view.frame.width, height: height)
+//        let height: CGFloat = 200 //whatever height you want
+//        self.navigationController?.navigationBar.frame.size.height = height
+//       // self.navBar = CGRect(x: 0, y: 0, width: view.frame.width , height: height)
         
+         print("TurnOnVC -- view did APPEAR")
+        
+       sleep(2)
+        self.updateState()
+    
     }
 
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        print("turnOnVC viewDidLoad")
         self.view.tag = 0
         
         colorPicker.delegate = self
@@ -49,15 +56,22 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         fadeTextField.delegate=self
         timeTextField.delegate=self
         
-        self.updateState()
         
       
     }
      override func viewWillAppear(_ animated: Bool) {
         
+        print("TurnOnVC view will appear")
         
+         SwiftSpinner.show( duration: 1.5 , title: "Getting the Bulb's' Latest State")
+        
+        
+          //SwiftSpinner.hide()
+       
+     
         
     }
+
 
 
     
@@ -87,6 +101,7 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         colorPicker.stroke = 3
         colorPicker.hexLabel.textColor = UIColor.lightGray
         
+        
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -113,38 +128,29 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
     
     
     func updateState () {
-        let lampConfig=self.tabBarController  as!  lampTabBarController
-        self.myColor = lampConfig.color
-        while(true)
-        {
-            if(!lampConfig.updateState) {
-                
-                print("update state ")
-            
+         let lampConfig=self.tabBarController  as!  lampTabBarController
+        
                     self.myColor = lampConfig.color
-                
+                    print("update state ")
+                    self.myColor = lampConfig.color
+                    colorPicker.adjustToColor(self.myColor )
                     if(lampConfig.turnOn == true){
                         self.turnOnButton.setOn(true, animated: false)
                         self.view.backgroundColor = self.myColor ;
-                        colorPicker.adjustToColor(self.myColor )
                     }else{
                         self.turnOnButton.setOn(false, animated: false)
-                        colorPicker.adjustToColor(self.myColor )
                         self.view.backgroundColor = UIColor.white ;
                 }
                  self.navBar.title = lampConfig.username
                 return
-            }
-
         }
-    }
     
     
     //MARK: Actions :
     
     @IBAction func toAddFav(_ sender: UIButton) {
          let lampConfig = self.tabBarController as! lampTabBarController
-        
+        print("data dictionary :",lampConfig.dataDictionary)
         let alertController = UIAlertController(title : "Enter the name of this configuration : ",message :nil ,preferredStyle : .alert)
         let leftAction = UIAlertAction(title:"cancel" ,
                                        style :UIAlertActionStyle.cancel ,
@@ -153,7 +159,10 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         let rightAction = UIAlertAction(title:"Add" ,
                                         style :UIAlertActionStyle.default ){
                                             (action:UIAlertAction!)in
-                                            lampConfig.configDictionary[(alertController.textFields?[0].text)!] = lampConfig.dataDictionary ;
+                                            lampConfig.configDictionary[(alertController.textFields?[0].text)!] = lampConfig.dataDictionary as [String : AnyObject] ;
+                                            print("config dictionary :",lampConfig.configDictionary)
+                                       
+                                            
         }
         alertController.addTextField { (myTextField) in
             myTextField.borderStyle=UITextBorderStyle.none
@@ -162,7 +171,6 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         alertController.addAction(leftAction)
         alertController.addAction(rightAction)
         self.present(alertController,animated: true, completion: nil)
-        
     }
 
     @IBAction func toLogOut(_ sender: UIBarButtonItem) {
@@ -174,7 +182,9 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         let rightAction = UIAlertAction(title:"Log Out" ,
                                         style :UIAlertActionStyle.destructive){
                                             (action:UIAlertAction!)in
+                 //UserDefaults.standard.removeObject(forKey : "sessionKey")
                 self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+                                            
         }
         alertController.addAction(leftAction)
         alertController.addAction(rightAction)
@@ -186,19 +196,21 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         
          let lampConfig=self.tabBarController  as!  lampTabBarController
         
+        if(lampConfig.updateState){
+            print("config of lamp is not available !")
+            return
+        }
         if(turnOnButton.isOn){
-            print("turnon button is on")
             lampConfig.turnOn=true;
 //            self.myColor = lampConfig.color
 
-            UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
+            UIView.animate(withDuration: TimeInterval(lampConfig.fade/1000) , delay: TimeInterval(lampConfig.time), animations: {
                 self.view.backgroundColor = self.myColor
             }, completion:nil)
             
         }else {
-             print("turnon button is off")
              lampConfig.turnOn=false;
-             UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
+             UIView.animate(withDuration: 0.0 , delay:TimeInterval(lampConfig.time) , animations: {
                 self.view.backgroundColor = UIColor.white
             }, completion:nil)
         }
@@ -219,8 +231,14 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
         let lampConfig=self.tabBarController  as!  lampTabBarController
+        
+
+        if(!(textField.text?.isNumber)!){
+            print("invalid textField")
+            return
+        }
+        
         self.myColor=lampConfig.color ;
         
         if(textField==self.fadeTextField){
@@ -228,10 +246,6 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
             let fadeTime=Int(textField.text!)
             lampConfig.fade = fadeTime! ;
             
-            
-            UIView.animate(withDuration: TimeInterval(fadeTime!), delay: 0.0, animations: {
-                self.view.backgroundColor = self.myColor
-            }, completion:nil)
         }
         if(textField==self.timeTextField){
             
@@ -244,8 +258,21 @@ class TurnOnVC: UIViewController , UITextFieldDelegate ,  ChromaColorPickerDeleg
         }else {
             print ("\n could not network call")
         }
-        
     }
     
+}
+
+    extension UINavigationBar {
+        open override func sizeThatFits(_ size: CGSize) -> CGSize {
+            print("sizeThatFits")
+            return CGSize(width:UIScreen.main.bounds.width , height: 300)
+        }
+    }
+    extension String  {
+    var isNumber : Bool {
+        get{
+            return !self.isEmpty && self.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+        }
+    }
 }
 

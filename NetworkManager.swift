@@ -10,23 +10,21 @@ import Foundation
 
 class NetworkManager  {
 
-    func networkCall(dataModel : lampTabBarController) -> Bool {
-
-    
-    var urlString = URL(string: "http://bulbmanager.simsend.ir/WebServices/Core.svc/SetPowerWithColor")
-    if(dataModel.updateState) {
-        urlString = URL(string: "http://bulbmanager.simsend.ir/WebServices/Core.svc/GetState")
-        }
+    func networkCall(_ sender:AnyObject ,_ destinationURL : String ,_ serverDictionary: [String: AnyObject]) -> Bool {
         
+    var errorFlag = false
+    var urlString = URL(string : destinationURL )
     let session = URLSession.shared
     var request = URLRequest(url : urlString! )
     request.httpMethod = "POST" ;
-    
+
     do {
-        request.httpBody = try JSONSerialization.data(withJSONObject: dataModel.serverDictionary, options: .prettyPrinted)
-    }
+        request.httpBody = try JSONSerialization.data(withJSONObject: serverDictionary, options: .prettyPrinted)
+       }
     catch let error {
         print(error.localizedDescription)
+        errorFlag = true
+        return false
     }
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -34,43 +32,47 @@ class NetworkManager  {
     let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
         
         guard error == nil else {
+            print(error ?? 0)
+            errorFlag = true
             return
         }
         
         guard let data = data else {
+            errorFlag = true
             return
         }
         
         do {
             //create json object from data
             if let json = try JSONSerialization.jsonObject(with: data , options: .mutableContainers ) as? [ String: Any ] {
-                if(dataModel.updateState){
-                    print("server get State response : " , json)
-                    
-                    guard let parameters = json["Parameters"] as? [String : Any] else {
-                        
-                        return
+                print("RESPONSEEE")
+                if(destinationURL == "http://192.168.1.40/WebServices/Core.svc/GetState" ){
+                    var lampConfig = lampTabBarController()
+                    lampConfig = sender as! lampTabBarController
+                    lampConfig.manageResponse(json)
+                    return
                     }
-                    dataModel.red = parameters["Red"] as! Int ;
-                    
-                    dataModel.green = parameters["Green"] as! Int ;
-                    dataModel.blue = parameters["Blue"] as! Int ;
-                    
-                    dataModel.fade = parameters["FadeTime"] as! Int  ;
-                    dataModel.turnOn = (parameters["Power"] as! Bool) ;
-                    
-                    dataModel.updateColor()
-                    dataModel.updateState = false ;
-                    }
+                else if (destinationURL == "http://192.168.1.40/WebServices/Profile.svc/Login"){
+                    var loginViewController = loginVC()
+                    loginViewController = sender as! loginVC
+                    loginViewController.manageResponse(json)
                 }
+            }
         } catch let error {
             print("!! DATA FROM SERVER ERROR !! ")
             print(error.localizedDescription)
+            errorFlag = true
             return
         }
     })
     task.resume()
-    return true ;
+    return true
+//        if(errorFlag){
+//            print("network call error flag")
+//            return false
+//        }else {
+//            return true
+//        }
 }
     
     func parseJSONFromServer(json : Dictionary<String , Any>, dataModel : lampTabBarController ) {

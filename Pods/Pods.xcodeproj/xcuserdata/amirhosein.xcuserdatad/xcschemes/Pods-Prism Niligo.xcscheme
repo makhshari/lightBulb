@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EEB87557B22D98B260352847731C057"
+               BlueprintIdentifier = "CCF69837D83ADAD0B7DC1BBA38D6A596"
                BuildableName = "Pods_Prism_Niligo.framework"
                BlueprintName = "Pods-Prism Niligo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0EEB87557B22D98B260352847731C057"
+            BlueprintIdentifier = "CCF69837D83ADAD0B7DC1BBA38D6A596"
             BuildableName = "Pods_Prism_Niligo.framework"
             BlueprintName = "Pods-Prism Niligo"
             ReferencedContainer = "container:Pods.xcodeproj">

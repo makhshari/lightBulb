@@ -59,7 +59,22 @@ class ConfigTVC: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "configTableViewCell", for: indexPath) as? configTableViewCell else {
              fatalError("The dequeued cell is not an instance of configTableViewCell.")
         }
-        cell.configLabel.text = Array(self.configDictionary.keys)[indexPath.row]
+        
+        var myKey = Array(self.configDictionary.keys)[indexPath.row]
+        
+        cell.configLabel.text = myKey
+        var cellDictionary = self.configDictionary[myKey] as! [String : Any]
+        var red = ( cellDictionary["Red"] as AnyObject ).integerValue
+        var green = ( cellDictionary["Green"] as AnyObject ).integerValue
+        var blue = ( cellDictionary["Blue"] as AnyObject ).integerValue
+        
+        var rowColor = UIColor(red : CGFloat( red! )/255 , green : CGFloat(green!)/255 , blue : CGFloat(blue!)/255 , alpha : 1.0 )
+        
+        cell.configCircle.layer.borderWidth = 1
+        cell.configCircle.layer.masksToBounds = false
+        cell.configCircle.layer.cornerRadius = cell.configCircle.frame.height/2
+        cell.configCircle.backgroundColor = rowColor
+        print("key ",myKey,"is with color : ",rowColor)
         // Configure the cell...
 
         return cell
@@ -69,8 +84,13 @@ class ConfigTVC: UITableViewController {
         
         let myKey = Array(self.configDictionary.keys)[indexPath.row]
         let lampConfig=self.tabBarController as! lampTabBarController
-        lampConfig.dataDictionary = self.configDictionary[myKey] as! [String : Any]
+        
+        
+        lampConfig.dataDictionary = lampConfig.configDictionary[myKey] as! [String : Any]
+        lampConfig.attributesUpdate()
     
+        
+        
         guard ( lampConfig.networkCall(sender: self.view) )else {
               fatalError("network call failed for config")
         }
@@ -91,10 +111,18 @@ class ConfigTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let myKey = Array(self.configDictionary.keys)[indexPath.row]
+            let lampConfig=self.tabBarController as! lampTabBarController
+            
+            //print("this row has been deleted : ", lampConfig.configDictionary[myKey] as! [String : Any])
+            
+            self.configDictionary.remove(at: self.configDictionary.index(forKey: myKey)! )
+            lampConfig.configDictionary.remove(at: lampConfig.configDictionary.index(forKey: myKey)! )
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     
 

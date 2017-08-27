@@ -23,8 +23,6 @@
 		48C4AF0A1F2EEE3600A08213 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C4AF091F2EEE3600A08213 /* NetworkManager.swift */; };
 		48CA42EE1F39A12C005A7B44 /* configTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA42ED1F39A12C005A7B44 /* configTableViewCell.swift */; };
 		48CA42F21F39A883005A7B44 /* ConfigTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA42F11F39A883005A7B44 /* ConfigTVC.swift */; };
-		48F80CDF1F23198700C56A9A /* FadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F80CDE1F23198700C56A9A /* FadeVC.swift */; };
-		48F80CE11F2319A200C56A9A /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F80CE01F2319A200C56A9A /* ColorVC.swift */; };
 		48F80CE31F2319D600C56A9A /* TurnOnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F80CE21F2319D600C56A9A /* TurnOnVC.swift */; };
 		51528FA025C2605E86524E0F /* Pods_Prism_Niligo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18108EB1BAB591545BA2676A /* Pods_Prism_Niligo.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +49,6 @@
 		48C4AF091F2EEE3600A08213 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../NetworkManager.swift; sourceTree = "<group>"; };
 		48CA42ED1F39A12C005A7B44 /* configTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configTableViewCell.swift; sourceTree = "<group>"; };
 		48CA42F11F39A883005A7B44 /* ConfigTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigTVC.swift; sourceTree = "<group>"; };
-		48F80CDE1F23198700C56A9A /* FadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeVC.swift; sourceTree = "<group>"; };
-		48F80CE01F2319A200C56A9A /* ColorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
 		48F80CE21F2319D600C56A9A /* TurnOnVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnOnVC.swift; sourceTree = "<group>"; };
 		4B50D9DA8DEC3B5B26055A2E /* Pods-Prism Niligo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prism Niligo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prism Niligo/Pods-Prism Niligo.release.xcconfig"; sourceTree = "<group>"; };
 		D5DAA4BF8644B0EC84371CD9 /* Pods-Prism Niligo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prism Niligo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prism Niligo/Pods-Prism Niligo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,13 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				480FCC4F1F236B8200209E42 /* Resources */,
-				48F80CDB1F2318F600C56A9A /* viewControllers */,
+				48E4376E1F4AC6210058EE92 /* tabBar */,
 				48C4AF091F2EEE3600A08213 /* NetworkManager.swift */,
-				4866C25A1F261BAF00432DAB /* lampConfig.swift */,
 				4803770A1F30512A00C78717 /* loginVC.swift */,
 				48668AA41F1E0F15008A3737 /* AppDelegate.swift */,
-				48F80CE01F2319A200C56A9A /* ColorVC.swift */,
-				48F80CDE1F23198700C56A9A /* FadeVC.swift */,
 				48668AA81F1E0F15008A3737 /* Main.storyboard */,
 				48668AAB1F1E0F15008A3737 /* Assets.xcassets */,
 				48668AAD1F1E0F15008A3737 /* LaunchScreen.storyboard */,
@@ -131,14 +124,23 @@
 			path = "Prism NiligoTests";
 			sourceTree = "<group>";
 		};
-		48F80CDB1F2318F600C56A9A /* viewControllers */ = {
+		48E4376E1F4AC6210058EE92 /* tabBar */ = {
 			isa = PBXGroup;
 			children = (
+				48F80CDB1F2318F600C56A9A /* table */,
 				48F80CE21F2319D600C56A9A /* TurnOnVC.swift */,
-				48CA42F11F39A883005A7B44 /* ConfigTVC.swift */,
-				48CA42ED1F39A12C005A7B44 /* configTableViewCell.swift */,
+				4866C25A1F261BAF00432DAB /* lampConfig.swift */,
 			);
-			name = viewControllers;
+			name = tabBar;
+			sourceTree = "<group>";
+		};
+		48F80CDB1F2318F600C56A9A /* table */ = {
+			isa = PBXGroup;
+			children = (
+				48CA42ED1F39A12C005A7B44 /* configTableViewCell.swift */,
+				48CA42F11F39A883005A7B44 /* ConfigTVC.swift */,
+			);
+			name = table;
 			sourceTree = "<group>";
 		};
 		696EF44A3BBD9CCE6FD406CE /* Frameworks */ = {
@@ -288,9 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F80CDF1F23198700C56A9A /* FadeVC.swift in Sources */,
 				48F80CE31F2319D600C56A9A /* TurnOnVC.swift in Sources */,
-				48F80CE11F2319A200C56A9A /* ColorVC.swift in Sources */,
 				48CA42EE1F39A12C005A7B44 /* configTableViewCell.swift in Sources */,
 				48CA42F21F39A883005A7B44 /* ConfigTVC.swift in Sources */,
 				4803770B1F30512A00C78717 /* loginVC.swift in Sources */,
@@ -422,6 +422,8 @@
 			baseConfigurationReference = D5DAA4BF8644B0EC84371CD9 /* Pods-Prism Niligo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QU9RK69EK9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-Niligo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -440,6 +443,8 @@
 			baseConfigurationReference = 4B50D9DA8DEC3B5B26055A2E /* Pods-Prism Niligo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QU9RK69EK9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Prism-Niligo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

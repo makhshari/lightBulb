@@ -1,12 +1,21 @@
 PODS:
   - ChromaColorPicker (1.5.1)
+  - IQKeyboardManagerSwift (4.0.12)
+  - SwiftSpinner (1.3.0)
+  - TransitionButton (0.2.0)
 
 DEPENDENCIES:
   - ChromaColorPicker
+  - IQKeyboardManagerSwift
+  - SwiftSpinner
+  - TransitionButton
 
 SPEC CHECKSUMS:
   ChromaColorPicker: cc7fc1d92569a8a9198fe89d9a420147e508462c
+  IQKeyboardManagerSwift: 3c66bea62a7d955b67b0eef0e31522b46261336b
+  SwiftSpinner: c249fffed3e74b5f3e6492dcc05d6bc1525a8220
+  TransitionButton: 82a065bd97f9434ecfa7bb3a15306aec1b5a5894
 
-PODFILE CHECKSUM: 99cfef3c5d469e12100a1bb3028ef0e71feaa64a
+PODFILE CHECKSUM: c6df9b7c484b968bb241a20d9e4e86d3b6b9c034
 
 COCOAPODS: 1.2.1
