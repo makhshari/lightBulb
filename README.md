@@ -1,5 +1,6 @@
 # IoT lightBulb
 iOS app for controlling an IoT light bulb remotely. 
+Communicating with a Web of Things platform to control lightning of the Alton-Tech company.
 
 # Installation
 You should connect your iPhone or iPad device to your computer, open iTunes, and drag the ipa file to apps.
