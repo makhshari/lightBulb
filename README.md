@@ -1,8 +1,8 @@
 # IoT lightBulb
-iOS app for controlling an IoT light bulb remotely 
+iOS app for controlling an IoT light bulb remotely. 
 
 # Installation
-You should connect your iPhone or iPad device to your computer open iTunes and drag the ipa file to apps.
+You should connect your iPhone or iPad device to your computer, open iTunes, and drag the ipa file to apps.
 
 # Usage
 This app aims to ease the use of a smart light device.
